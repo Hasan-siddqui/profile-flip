@@ -112,3 +112,34 @@ body {
   border-color: #ff6600;
   background: linear-gradient(375deg, transparent, transparent);
 }
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .flip-inner-container {
+    width: 86%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    gap: 20px;
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  .flip-inner-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  .flip-inner-container {
+    width: 90%;
+  }
+}
